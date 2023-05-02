@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:text="Browse Pdf"
+        android:visibility="gone"
+        android:layout_above="@+id/ePdf_name"
+        android:id="@+id/btnBrowse"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        android:layout_above="@+id/ePdf_name"
+        android:src="@drawable/pdf_logo"
+        android:id="@+id/btnPdf_logo"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_above="@+id/ePdf_name"
+        android:layout_toRightOf="@+id/btnPdf_logo"
+        android:src="@drawable/pdf_cross"
+        android:id="@+id/btnPdf_cross"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pdf name"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/ePdf_name"/>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/black"
+        android:text="Upload"
+        android:layout_below="@+id/ePdf_name"/>
+
+
+</RelativeLayout>
